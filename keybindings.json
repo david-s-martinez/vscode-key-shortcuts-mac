@@ -804,12 +804,12 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+up", 
+        "key": "shift+alt+up", 
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+down", 
+        "key": "shift+alt+down", 
         "command": "editor.action.insertCursorBelow",
         "when": "editorTextFocus"
     },
