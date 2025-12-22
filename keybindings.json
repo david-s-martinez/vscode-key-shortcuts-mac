@@ -748,6 +748,28 @@
     // =================================================================
     //  MULTI-CURSOR & SELECTION
     // =================================================================
+    // --- Line Selection ---
+    {
+        "key": "ctrl+shift+right",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    // Unbind default Mac shortcuts
+    {
+        "key": "cmd+shift+right",
+        "command": "-cursorEndSelect"
+    },
+    {
+        "key": "cmd+shift+left",
+        "command": "-cursorHomeSelect"
+    },
+
+    // --- Multi-Cursor ---
     {
         "key": "alt+click",
         "command": "editor.action.insertCursorAtPosition",
