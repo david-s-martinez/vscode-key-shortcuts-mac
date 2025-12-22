@@ -599,11 +599,23 @@
     // =================================================================
     //  BASIC EDITING (Editor + Chat + Search + Inputs)
     // =================================================================
+    // --- Select All ---
     {
         "key": "ctrl+a",
         "command": "editor.action.selectAll",
         "when": "textInputFocus && !terminalFocus"
     },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll",
+        "when": "findWidgetVisible"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll",
+        "when": "searchViewletVisible && searchInputBoxFocus"
+    },
+    
     // --- Undo / Redo ---
     {
         "key": "ctrl+z",
@@ -623,6 +635,22 @@
     {
         "key": "cmd+z",
         "command": "-undo"
+    },
+    {
+        "key": "cmd+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "cmd+x",
+        "command": "-editor.action.clipboardCutAction"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "cmd+v",
+        "command": "-editor.action.clipboardPasteAction"
     },
 
     // --- Clipboard ---
