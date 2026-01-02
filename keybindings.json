@@ -914,6 +914,15 @@
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus"
     },
+    // {
+    //     "key": "ctrl+click",
+    //     "command": "editor.action.revealDefinition",
+    //     "when": "editorTextFocus && isWeb == false"
+    // },
+    // {
+    //     "key": "cmd+click",
+    //     "command": "-editor.action.revealDefinition"
+    // },
     {
         "key": "ctrl+shift+f10",
         "command": "editor.action.peekDefinition",
